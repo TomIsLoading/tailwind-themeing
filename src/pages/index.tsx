@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import CardOG from "@/components/CardOG";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -11,6 +12,7 @@ export default function Home() {
     <main
       className={`grid place-content-center min-h-screen p-24 ${poppins.className}`}
     >
+      {/* <CardOG /> */}
       <Card />
     </main>
   );

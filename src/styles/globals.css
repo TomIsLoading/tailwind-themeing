@@ -2,26 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.light {
+  --background: 245, 245, 245;
+
+  --border: 212, 212, 212;
+  --card: 255, 255, 255;
+
+  --copy-primary: 23, 23, 23;
+  --copy-secondary: 115, 115, 115;
+
+  --cta: 139, 92, 246;
+  --cta-active: 124, 58, 237;
+  --cta-text: 255, 255, 255;
+
+  background: rgba(var(--background));
+}
+
+.dark {
+  --background: 0, 0, 0;
+
+  --border: 38, 38, 38;
+  --card: 23, 23, 23;
+
+  --copy-primary: 250, 250, 250;
+  --copy-secondary: 115, 115, 115;
+
+  --cta: 99, 102, 241;
+  --cta-active: 79, 70, 229;
+  --cta-text: 255, 255, 255;
+
+  background: rgba(var(--background));
+}
+
+.red {
+  --background: 254, 202, 202;
+
+  --border: 185, 28, 28;
+  --card: 239, 68, 68;
+
+  --copy-primary: 250, 250, 250;
+  --copy-secondary: 254, 226, 226;
+
+  --cta: 250, 250, 250;
+  --cta-active: 254, 226, 226;
+  --cta-text: 239, 68, 68;
+
+  background: rgba(var(--background));
+}
+
+/* :root {
+  --background: 245, 245, 245;
+
+  --border: 212, 212, 212;
+  --card: 255, 255, 255;
+
+  --copy-primary: 23, 23, 23;
+  --copy-secondary: 115, 115, 115;
+
+  --cta: 139, 92, 246;
+  --cta-active: 124, 58, 237;
+  --cta-text: 255, 255, 255;
+}
+
+body {
+  background: rgba(var(--background));
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    --background: 0, 0, 0;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    --border: 38, 38, 38;
+    --card: 23, 23, 23;
+
+    --copy-primary: 250, 250, 250;
+    --copy-secondary: 115, 115, 115;
+
+    --cta: 99, 102, 241;
+    --cta-active: 79, 70, 229;
+    --cta-text: 255, 255, 255;
+  }
+} */

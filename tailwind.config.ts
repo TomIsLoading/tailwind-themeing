@@ -9,14 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "rgba(var(--background), <alpha-value>)",
-        border: "rgba(var(--border), <alpha-value>)",
-        card: "rgba(var(--card), <alpha-value>)",
-        "copy-primary": "rgba(var(--copy-primary), <alpha-value>)",
-        "copy-secondary": "rgba(var(--copy-secondary), <alpha-value>)",
-        cta: "rgba(var(--cta), <alpha-value>)",
-        "cta-active": "rgba(var(--cta-active), <alpha-value>)",
-        "cta-text": "rgba(var(--cta-text), <alpha-value>)",
+        background: "rgba(var(--background))",
+        border: "rgba(var(--border))",
+        card: "rgba(var(--card))",
+        "copy-primary": "rgba(var(--copy-primary))",
+        "copy-secondary": "rgba(var(--copy-secondary))",
+        cta: "rgba(var(--cta))",
+        "cta-active": "rgba(var(--cta-active))",
+        "cta-text": "rgba(var(--cta-text))",
+
+        grape: "rgba(var(--grape))",
       },
     },
   },

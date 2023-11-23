@@ -50,6 +50,10 @@
   background: rgba(var(--background));
 }
 
+:root {
+  --grape: 114, 35, 204;
+}
+
 /* :root {
   --background: 245, 245, 245;
 
